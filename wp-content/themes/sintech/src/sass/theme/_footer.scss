@@ -1,0 +1,117 @@
+.footer {
+    background-color: #1D1D1F;
+    padding: 60px 0px;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 80px;
+    }
+
+    .footer--inner {
+        .footer--col-1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @include media-breakpoint-down(lg) {
+                flex-direction: column;
+            }
+
+            .col--inner {
+                @include media-breakpoint-down(lg) {
+                    padding-bottom: 30px;
+                }
+
+                .title {
+                    color: #F5F5F5;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                .menu-link {
+                    margin-bottom: 5px;
+                    max-width: 300px;
+
+                    i {
+                        color: #F5F5F5;
+                        padding-right: 10px;
+                    }
+
+                    a {
+                        color: #F5F5F5;
+                        font-size: 16px;
+                        font-weight: 100;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .footer--col-2 {
+            .social-icons {
+                display: flex;
+                align-items: flex-start;
+                justify-content: end;
+
+                @include media-breakpoint-down(lg) {
+                    justify-content: center;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                    padding: 0 15px;
+
+                    a {
+                        color: #F5F5F5;
+
+                        svg {
+                            stroke: #F5F5F5;
+                            transition: stroke 0.8s ease, color 0.8s ease;
+                        }
+
+                        &:hover {
+                            svg {
+                                stroke: #00A69C;
+                            }
+                        }
+
+                        i {
+                            font-size: 20px;
+                            font-weight: 100;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        background-color: #F5F5F5;
+        border: 0;
+        opacity: 1;
+        margin: 40px 0px;
+
+        @include media-breakpoint-down(lg) {
+            margin: 20px 0px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+
+        p {
+            color: #F5F5F5;
+            font-size: 12px;
+            font-weight: 100;
+            margin-bottom: 0px;
+
+            a {
+                color: #F5F5F5;
+            }
+
+            sup {
+                font-size: 15px;
+            }
+        }
+    }
+}

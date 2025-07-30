@@ -1,0 +1,71 @@
+// URW DIN Font
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN Light'), local('URWDIN-Light'),
+        url('../assets/fonts/URWDIN-Light.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-Light.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN Regular'), local('URWDIN-Regular'),
+        url('../assets/fonts/URWDIN-Regular.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN Bold'), local('URWDIN-Bold'),
+        url('../assets/fonts/URWDIN-Bold.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN LightItalic'), local('URWDIN-LightItalic'),
+        url('../assets/fonts/URWDIN-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-LightItalic.woff2') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN Italic'), local('URWDIN-Italic'),
+        url('../assets/fonts/URWDIN-Italic.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-Italic.woff2') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'URW DIN';
+    src: local('URWDIN Medium'), local('URWDIN-Medium'),
+        url('../assets/fonts/URWDIN-Medium.woff2') format('woff2'),
+        url('../assets/fonts/URWDIN-Medium.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// MVTM Font
+@font-face {
+    font-family: 'MVTM Pro';
+    src: local('MVTM Pro'), local('MVTM-Pro'),
+        url('../assets/fonts/mvtm/MVTMProDemo1Regular.woff2') format('woff2'),
+        url('../assets/fonts/mvtm/MVTMProDemo1Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,175 @@
+.page-content {
+  &.single-page {
+    // Style hero section
+    .hero {
+      position: relative;
+      height: calc(200px + (360 - 200) * ((100vw - 320px) / (1920 - 320)));
+
+      .bg-img-wrapper {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        background-color: $color-5;
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 5;
+          background-color: #000000b6;
+          width: 100%;
+          height: 100%;
+        }
+        .image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          z-index: 1;
+          position: sticky;
+        }
+      }
+      .title-wrapper {
+        z-index: 10;
+        font-weight: 700;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-9;
+
+        .title {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .post-content {
+      padding-top: $headerWhiteSpace;
+
+      .body-content {
+        border: 1px solid #efefef;
+        .feature-image {
+          padding-bottom: $headerWhiteSpace;
+          .image {
+            height: calc(
+              380px + (500 - 380) * ((100vw - 320px) / (1920 - 320))
+            );
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .post-meta {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 60px;
+          row-gap: 15px;
+          color: #5d666f;
+          padding: calc(15px + (42 - 15) * ((100vw - 320px) / (1920 - 320)));
+          padding-top: 0;
+
+          a {
+            color: #5d666f;
+            text-decoration: none;
+          }
+
+          .point {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            i {
+              color: $color-5;
+            }
+          }
+        }
+
+        .inner-main-content {
+          color: #5d666f;
+
+          .quot-wrap {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            padding: $headerWhiteSpace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f6f6f6;
+            text-align: center;
+
+            .icon-wrap {
+              width: 60px;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $color-4;
+              border-radius: 50%;
+
+              i {
+                font-size: calc(
+                  20px + (32 - 20) * ((100vw - 320px) / (1920 - 320))
+                );
+                color: $color-5;
+              }
+            }
+            .quot-content {
+              padding-top: 22px;
+              font-size: calc(
+                20px + (36 - 20) * ((100vw - 320px) / (1920 - 320))
+              );
+              color: $color-8;
+              font-weight: 600;
+            }
+            .author-name {
+              display: flex;
+              flex-direction: column;
+              padding-top: 22px;
+              font-weight: 600;
+              color: $color-8;
+
+              .name {
+                color: $color-5;
+              }
+            }
+          }
+
+          .bottom-description {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+
+    // Style page actions
+    .page-actions {
+      padding-top: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+      padding-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+      .post-navigation {
+        padding-left: calc(15px + (80 - 15) * ((100vw - 320px) / (1920 - 320)));
+        padding-right: calc(
+          15px + (80 - 15) * ((100vw - 320px) / (1920 - 320))
+        );
+        .wrap {
+          max-width: 380px;
+          word-wrap: break-word;
+
+          &.left {
+            opacity: 0.5;
+          }
+
+          .nav-label {
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $color-3;
+            padding-bottom: 6px;
+          }
+          .link {
+            color: $color-8;
+            text-underline-offset: 2px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[29-Feb-2024 11:55:31 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 105
+[29-Feb-2024 11:55:31 UTC] PHP Warning:  Illegal string offset 'alt' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 105
+[29-Feb-2024 15:07:07 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 538
+[29-Feb-2024 15:07:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 538
+[29-Feb-2024 16:41:10 UTC] PHP Notice:  Undefined index: home_who_we_section_header in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 334
+[29-Feb-2024 16:41:10 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 344
+[29-Feb-2024 16:41:10 UTC] PHP Warning:  Illegal string offset 'alt' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 344
+[29-Feb-2024 16:45:15 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 344
+[29-Feb-2024 16:45:15 UTC] PHP Warning:  Illegal string offset 'alt' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 344
+[29-Feb-2024 16:47:11 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 341
+[29-Feb-2024 16:49:27 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 341
+[29-Feb-2024 16:54:13 UTC] PHP Warning:  Illegal string offset 'url' in /home/facadelk/public_html/wp-content/themes/facadelk/template-parts/home-template.php on line 341

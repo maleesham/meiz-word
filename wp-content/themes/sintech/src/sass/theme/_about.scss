@@ -1,0 +1,152 @@
+.page-content {
+    &.about-page {
+        background-color: hsl(240, 3%, 12%);
+
+        .about-hero-section {
+            .about-background {
+                height: 60dvh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+
+                @include media-breakpoint-down(lg) {
+                    height: 50dvh;
+                    background-position: 50% 50%;
+                }
+
+                .container {
+                    z-index: 2;
+
+                    .inner-box {
+                        .row {
+                            align-items: center;
+
+                            .inner-col-1 {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .text-wrap {
+                                    padding-bottom: 60px;
+
+                                    @include media-breakpoint-down(lg) {
+                                        padding-bottom: 30px;
+                                    }
+
+                                    .heading {
+                                        color: #f5f5f5;
+                                        font-size: calc(50px + (50 - 40) * ((100vw - 992px) / (1920 - 992)));
+                                        font-weight: 700;
+
+                                        @include media-breakpoint-down(lg) {
+                                            font-size: calc(30px + (40 - 28) * ((100vw - 300px) / (992 - 300)));
+                                        }
+
+                                        @include media-breakpoint-down(md) {
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    .description {
+                                        color: #f5f5f5;
+                                        font-size: calc(18px + (20 - 18) * ((100vw - 992px) / (1920 - 992)));
+                                        font-weight: 400;
+
+                                        @include media-breakpoint-down(lg) {
+                                            font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (992 - 300)));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .who-we-section {
+            background-color: #f5f5f5;
+            padding-top: 60px;
+            h3 {
+                color: $color-2;
+                font-weight: 900;
+            }
+            p {
+                color: $color-1;
+            }
+            .who-we-section-header {
+                h2 {
+                    color: $color-2;
+                }
+            }
+        }
+
+        .mission-section {
+            background-color: #f5f5f5;
+            h3 {
+                color: $color-2;
+                font-weight: 900;
+            }
+            p {
+                color: $color-1;
+            }
+            .mission-section-header {
+                h2 {
+                    color: $color-2;
+                }
+            }
+            .mission-img-wrapper {
+                img {
+                    width: 100%;
+                    min-height: 450px;
+                }
+            }
+            .mission-wrapper {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .mission-content {
+                    .mission-body {
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+       
+        /* .feature-section {
+            background-color: #f5f5f5;
+            padding-top: 60px;
+            .feature-section-wrapper {
+                h4 {
+                    color: $color-2;
+                    font-weight: 900;
+                }
+                p {
+                    color: $color-1;
+                }
+                .feature-img-wrapper{
+                    img {
+                        width: 100%;
+                    }
+                }
+                .feature-content-body {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .feature-body {
+                        max-width: 400px;
+                        @include media-breakpoint-down(md) {
+                            max-width: 300px;
+                        }
+                    }
+                }
+            }
+        } */
+
+    }
+}

@@ -1,0 +1,87 @@
+ 
+//Colors
+
+$color-1: #131313;
+$color-2: #7FC241;
+$color-3: #76ed07; 
+$color-4: #FFFFFF; 
+$color-5: #d09e00;
+$color-6: #00235a;
+$color-7: #FDB813;
+$color-8: #190101;
+$color-9: #F8F8F8;
+$color-10: #1E1E1E;
+
+//Content WIDTH
+$contentWidth: 800px;
+
+
+@mixin innerContainer($maxSize: 92){
+    padding-left: calc(15px + ($maxSize - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(15px + ($maxSize - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+ 
+
+// Mixins
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1334px,
+);
+// Dinamic left padding
+@mixin dynamic-padding($screen-size: lg) {
+  $container-width: map-get($container-max-widths, $screen-size);
+  $container-min-width: 320px; // Set this based on your design requirements
+  $padding-left: unquote("calc((100vw - #{$container-width} + 15px) / 2)"); //remove + 15px if add container fluid
+  padding-left: $padding-left;
+}
+@mixin side-dynamic-padding() {
+    @include media-breakpoint-up(sm){
+        @include dynamic-padding(sm);
+      }
+      @include media-breakpoint-up(md){
+        @include dynamic-padding(md);
+      }
+      @include media-breakpoint-up(lg){
+        @include dynamic-padding(lg);
+      }
+      @include media-breakpoint-up(xl){
+        @include dynamic-padding(xl);
+      }
+      @include media-breakpoint-up(xxl){
+        @include dynamic-padding(xxl);
+      }
+}
+
+// Dinamic right padding
+@mixin dynamic-padding-right($screen-size-right: lg) {
+  $container-width: map-get($container-max-widths, $screen-size-right);
+  $container-min-width: 320px; // Set this based on your design requirements
+  $padding-right: unquote("calc((100vw - #{$container-width} + 15px) / 2)"); //remove + 15px if add container fluid
+  padding-right: $padding-right;
+}
+
+@mixin side-dynamic-padding-right() {
+    @include media-breakpoint-up(sm){
+        @include dynamic-padding-right(sm);
+      }
+      @include media-breakpoint-up(md){
+        @include dynamic-padding-right(md);
+      }
+      @include media-breakpoint-up(lg){
+        @include dynamic-padding-right(lg);
+      }
+      @include media-breakpoint-up(xl){
+        @include dynamic-padding-right(xl);
+      }
+      @include media-breakpoint-up(xxl){
+        @include dynamic-padding-right(xxl);
+      }
+}
+
+// Section spacing
+$whiteSpace: calc(60px + (100 - 60) * ((100vw - 320px) / (1920 - 320)));
+$headerWhiteSpace: calc(32px + (52 - 32) * ((100vw - 320px) / (1920 - 320)));
+$borderRadius: calc(15px + (24 - 15) * ((100vw - 320px) / (1920 - 320)));

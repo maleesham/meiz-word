@@ -1,0 +1,30 @@
+@import './node_modules/bootstrap/scss/bootstrap.scss'; // <-------- Loads Bootstrap4
+
+@import './node_modules/aos/src/sass/aos.scss'; // <-------- Loads AOS Animations
+
+
+@import "theme_variables";  // <-------- Add variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "theme_common";  // <-------- Add common styles into this file.
+@import "font";// <-------- Add font styles into this file.
+
+// Any additional imported files //
+@import "theme/header";
+@import "theme/footer";
+@import "theme/home";
+@import "theme/contact";
+@import "theme/video";
+@import "theme/about";
+@import "theme/faq";
+@import "theme/creative";
+@import "theme/web";
+@import "theme/digital";
+@import "theme/project-archive-template";
+@import "theme/package-template";
+@import "theme/project-single-template";
+@import "theme/blog-archive";
+@import "theme/services-archive-template";
+@import "theme/service-single-template";
+@import "theme/single-page";
+
+
+
